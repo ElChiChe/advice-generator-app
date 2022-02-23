@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "manrope", sans-serif;
+}
+
+body {
+	max-width: 1440px;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: hsl(217, 19%, 16%);
+}
+
+.card-container {
+	background: hsl(217, 19%, 24%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: auto;
+	width: 55%;
+	height: 55%;
+	border-radius: 10px;
+}
+
+.text-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-id {
+	font-weight: 800;
+	position: relative;
+	bottom: 30px;
+	color: hsl(150, 100%, 66%);
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 9px;
+}
+
+.advice-container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	max-width: 70%;
+}
+
+.advice-text {
+	color: hsl(193, 38%, 86%);
+	text-align: center;
+	font-weight: 800;
+	font-size: 28px;
+}
+
+.dice-icon {
+	background: hsl(150, 100%, 66%);
+	padding: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 115px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.dice-icon:hover {
+	background: hsl(150, 100%, 44%);
+}
+
+.dice-icon > img {
+	width: 90%;
+	height: 80%;
+}
+
+.divider-icon-desktop {
+	position: relative;
+	top: 50px;
+	width: 80%;
+}
+
+.attribution {
+	position: absolute;
+	transform: rotate(-90deg);
+	left: -170px;
+	color: #fff;
+}
+
+.attribution > a {
+	color: red;
+}
+
+.attribution > a:hover {
+	color: #ff1239;
+}
+
+.divider-icon-mobile {
+	display: none;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+
+	.advice-text {
+		font-size: 24px;
+	}
+
+	.dice-icon {
+		width: 40px;
+	}
+
+	.divider-icon-desktop {
+		display: none;
+	}
+
+	.divider-icon-mobile {
+		display: block;
+		position: relative;
+		top: 30px;
+		width: 80%;
+	}
+
+}
+
+@media screen and (max-width: 375px) {
+
+	.text-id {
+		bottom: 40px;
+	}
+
+	.card-container {
+		width: 90%;
+		height: 60%;
+	}
+
+	.attribution {
+		transform: rotate(0deg);
+		left: 0;
+		bottom: 10px;
+		font-size: 10px;
+		left: 50px;
+	}
+
+	.advice-container {
+		width: 100%;
+		max-height: 60%;
+	}
+
+	.dice-icon {
+		width: 50px;
+		bottom: 100px;
+	}
+
+	.divider-icon-desktop {
+		top: 30px;
+		display: none;
+	}
+
+	.divider-icon-mobile {
+
+	}
+
+	.advice-text {
+		width: 100%;
+	}
+}
